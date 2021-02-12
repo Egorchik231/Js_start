@@ -28,15 +28,14 @@ function createChessBoard(){
     return console.log('Success')
 }
 
-
-
-
 createChessBoard()
 
+
+
 const basket = [
-    // {name: 'Bread', price: 30, number: 2},
-    // {name: 'Milk', price: 60, number: 1},
-    // {name: 'Chips', price: 100, number: 5}
+    {name: 'Bread', price: 30, number: 2},
+    {name: 'Milk', price: 60, number: 1},
+    {name: 'Chips', price: 100, number: 5}
 ]
 
 function countBasketPrice(basket) {
@@ -78,7 +77,7 @@ function renderCatalog(Products){
 
     Products.forEach((product) => {
         outPutString += `<div class="product-item">
-                            <img src="${product.img}">
+                            <img class="prod_img" src="${product.img}">
                             <div class="product-list">
                                 <h3>${product.name}</h3>
                                   <span class="price">$${product.price}</span>
