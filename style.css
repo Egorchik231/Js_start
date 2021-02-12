@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.chessboard{
+    border: solid 1px red;
+    width: 400px;
+}
+
+.line{
+    display: flex;
+    justify-content: start;
+}
+
+.white{
+    background-color: white;
+}
+
+.black{
+    background-color: black;
+}
+
+.block{
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.text{
+    color: blue;
+}
+
+.product-item {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid #F5F5F5;
+    background: white;
+    font-family: "Open Sans";
+    transition: .3s ease-in;
+}
+.product-item:hover {
+    border-bottom: 2px solid #fc5a5a;
+}
+.product-item img {
+    display: block;
+    width: 100%;
+}
+.product-list {
+    background: #fafafa;
+    padding: 15px 0;
+}
+.product-list h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #444444;
+    margin: 0 0 10px 0;
+}
+.price {
+    font-size: 16px;
+    color: #fc5a5a;
+    display: block;
+    margin-bottom: 12px;
+}
+.button {
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 12px;
+    background: #cccccc;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 28px;
+    transition: .3s ease-in;
+}
+
+.button:active { background: white;  color: #454545; border: none}
+.product-item:hover .button {
+    background: #fc5a5a;
+}
+
+#catalog{
+    display: flex;
+    margin: 40px auto;
+}
+
+.prod_img{
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.basket{
+    display: flex;
+    justify-content: space-between;
+    background: #454545;
+    padding: .5em 5px;
+
+}
+
+.cart{
+    color: #cccccc;
+}
+
+.button-c {
+    display: inline-block;
+    background: #aaa;
+    color: #ddd;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+}
+.button-c:hover { background: rgba(255,255,255,.2); }
+.button-c:active { background: white;  color: #454545}
+
+.invisible{
+
+    display: none !important;
+}
+
+.full-cart{
+    height: 121px;
+    display: flex;
+    justify-content: space-around;
+    background: #aaaaaa;
+}
+.product-item-cart{
+    border: #444444 1px solid;
+}

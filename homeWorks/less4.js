@@ -1,6 +1,6 @@
 alert('Task 1')
 
-number = prompt('Enter number')
+let number = prompt('Enter number')
 
 function threeDigitNumberToObject(anyNumber){
     if (anyNumber > 999 || anyNumber < 0) {
@@ -8,19 +8,19 @@ function threeDigitNumberToObject(anyNumber){
         return {}
     }
 
-    const threeDigitNumberInObject = {
+    let threeDigitNumberInObject = {
         'единицы': 0,
         'десятки': 0,
         'сотни': 0}
 
     for (let i in threeDigitNumberInObject) {
         threeDigitNumberInObject[i] = anyNumber % 10
-        anyNumber = anyNumber % 10
+        anyNumber = Math.floor(anyNumber / 10)
     }
     return threeDigitNumberInObject
 }
 
-threeDigitNumberToObject(number)
+console.log(threeDigitNumberToObject(number))
 
 alert('Task 2,3,4')
 
@@ -39,3 +39,5 @@ function countBasketPrice(basket) {
 }
 
 console.log(countBasketPrice(basket))
+
+export default {basket, countBasketPrice}
